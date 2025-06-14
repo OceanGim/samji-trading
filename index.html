@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>갈비탕 | 삼지상사</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="top-nav">
+            <div class="logo">
+                <a href="index.html">삼지상사</a>
+            </div>
+            <ul class="main-menu">
+                <li><a href="products.html">제품소개<span class="badge">11</span></a></li>
+            </ul>
+            
+        </div>
+        <nav class="sub-nav">
+            <ul class="sub-menu">
+                <li><a href="index.html" class="active">갈비탕</a></li>
+                <li><a href="product2.html">뼈없는갈비</a></li>
+                <li><a href="product3.html">뼈없는 참갈비찜</a></li>
+                <li><a href="product4.html">우건탕 (도가니탕)</a></li>
+                <li><a href="product5.html">꼬리곰탕</a></li>
+                <li><a href="product6.html">냉동자숙곱창</a></li>
+                <li><a href="product7.html">소고기탕</a></li>
+                <li><a href="product8.html">냉동 자숙 우건(스지)</a></li>
+                <li><a href="product9.html">냉동 자숙 갈비탕</a></li>
+                <li><a href="product10.html">소스</a></li>
+                <li><a href="product-features.html">제품특장점</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-content">
+            <div class="product-header">
+                <h1 class="product-title">갈비탕 (원산지:인도산)</h1>
+            </div>
+
+            <div class="product-images">
+                <div class="main-image">
+                    <img src="https://modo-phinf.pstatic.net/20250318_200/1742284100287NKdcL_JPEG/mosa5ZdrTe.jpeg" alt="갈비탕">
+                </div>
+                <div class="sub-images">
+                    <img src="https://modo-phinf.pstatic.net/20250313_168/1741833332786QtEIn_JPEG/mosaAkWOwL.jpeg" alt="갈비탕 상세1" onclick="showMainImage(this.src)">
+                    <img src="https://modo-phinf.pstatic.net/20250422_85/17453053074768ofNm_JPEG/mosaVB27jC.jpeg" alt="갈비탕 상세2" onclick="showMainImage(this.src)">
+                    <img src="https://modo-phinf.pstatic.net/20250422_220/1745305308928OH5gh_JPEG/mosaLNCBl9.jpeg" alt="갈비탕 상세3" onclick="showMainImage(this.src)">
+                </div>
+            </div>
+
+            <div class="product-info">
+                <div class="product-specs">
+                    <div class="spec-item">
+                        <div class="spec-label">품목</div>
+                        <div class="spec-value">갈비탕 A (can)</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-label">규격</div>
+                        <div class="spec-value">3kg / 4.5cm / 40피스</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-label">내용량</div>
+                        <div class="spec-value">1.4kg 내외</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-label">가공수율</div>
+                        <div class="spec-value">70%</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-label">가공냉동육</div>
+                        <div class="spec-value">2.1kg</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-label">공급단가</div>
+                        <div class="spec-value">28,000원</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-videos" style="margin: 40px 0;">
+                <h3 style="font-size: 20px; margin-bottom: 20px; text-align: center;">제품 사용 영상</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; max-width: 800px; margin: 0 auto;">
+                    <div style="text-align: center;">
+                        <h4 style="font-size: 16px; margin-bottom: 10px;">캔갈비 오픈 방법</h4>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/GmyoMDmXWVY" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div style="text-align: center;">
+                        <h4 style="font-size: 16px; margin-bottom: 10px;">캔갈비 사용 예시</h4>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/xGwKB-2bJJ4" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-cta" style="text-align: center; margin: 50px 0; padding: 40px; background: #f8f8f8; border-radius: 8px;">
+                <h3 style="font-size: 24px; margin-bottom: 10px;">제품 구매 문의</h3>
+                <p style="font-size: 18px; color: #666; margin-bottom: 20px;">담당자: 김동근 대리</p>
+                <p style="font-size: 32px; font-weight: bold; color: #333; margin-bottom: 20px;">010-9999-3436</p>
+                <a href="tel:010-9999-3436" class="btn">전화 문의하기</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p><strong>주식회사 삼지상사</strong></p>
+                <p>대표: 최진균 | 주소: 인천 연수구 예술로 20번길 91 (선학동)</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 주식회사 삼지상사. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 플로팅 전화 문의 버튼 -->
+    <a href="tel:010-9999-3436" class="floating-call-button">
+        📞 010-9999-3436
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

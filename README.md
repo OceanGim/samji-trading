@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 삼지상사 웹사이트
 
-## Getting Started
+삼지상사총판 제품 소개 웹사이트입니다.
 
-First, run the development server:
+## 프로젝트 구조
 
+### 1. HTML/CSS 버전 (메인)
+- 위치: 루트 디렉토리
+- 기술 스택: HTML5, CSS3, JavaScript (jQuery, Swiper.js)
+- 모바일 반응형 디자인
+- 직접 연락 시스템 (010-9999-3436)
+
+### 2. React/Next.js 버전
+- 위치: `/samji-react` 디렉토리
+- 기술 스택: Next.js, React, TypeScript, Tailwind CSS
+- 모던 웹 애플리케이션 구조
+
+## 주요 기능
+- 제품 카탈로그 (11개 제품)
+  - 갈비탕, 뼈없는갈비, 뼈없는 참갈비찜
+  - 우건탕(도가니탕), 꼬리곰탕, 냉동자숙곱창
+  - 소고기탕, 냉동자숙우건(스지), 냉동자숙갈비탕
+  - 갈비육수, 우골농축액
+- 회사 소개
+- 문의 시스템
+- 오시는 길
+
+## 개발 가이드
+
+### HTML/CSS 버전
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# 로컬 서버로 실행 (예: Live Server)
+# index.html 파일을 브라우저에서 직접 열거나 로컬 서버 사용
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### React 버전
+```bash
+cd samji-react
+npm install
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 배포
+- HTML 버전: GitHub Pages를 통해 배포 가능
+- React 버전: Vercel, Netlify 등을 통해 배포 가능
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 연락처
+- 대표전화: 010-9999-3436
+- 주소: 의정부시 고산동 996-3 고산한강 듀클래스 B동 923호
+- 대표자: 박종대
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+© 2024 삼지상사총판. All rights reserved.

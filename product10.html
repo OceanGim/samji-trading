@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소스 | 삼지상사</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-nav">
+            <div class="logo">
+                <a href="index.html">삼지상사</a>
+            </div>
+            <ul class="main-menu">
+                <li><a href="products.html">제품소개<span class="badge">11</span></a></li>
+            </ul>
+        </div>
+        <nav class="sub-nav">
+            <ul class="sub-menu">
+                <li><a href="index.html">갈비탕</a></li>
+                <li><a href="product2.html">뼈없는갈비</a></li>
+                <li><a href="product3.html">뼈없는 참갈비찜</a></li>
+                <li><a href="product4.html">우건탕 (도가니탕)</a></li>
+                <li><a href="product5.html">꼬리곰탕</a></li>
+                <li><a href="product6.html">냉동자숙곱창</a></li>
+                <li><a href="product7.html">소고기탕</a></li>
+                <li><a href="product8.html">냉동 자숙 우건(스지)</a></li>
+                <li><a href="product9.html">냉동 자숙 갈비탕</a></li>
+                <li><a href="product10.html" class="active">소스</a></li>
+                <li><a href="product-features.html">제품특장점</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-content">
+            <div class="product-header">
+                <h1 class="product-title">소스</h1>
+            </div>
+
+            <div class="product-images">
+                <div class="sub-images">
+                    <img src="https://modo-phinf.pstatic.net/20240809_216/172316077273612cWx_JPEG/mosafyVFYC.jpeg"
+                        alt="갈비육수" onclick="showMainImage(this.src)">
+                    <div class="product-info" style="margin-top: 30px;">
+                        <h3 style="font-size: 20px; margin-bottom: 20px; text-align: center;">갈비육수</h3>
+                        <p style="text-align: center; color: #666; margin-bottom: 15px;">갈비탕을 더욱 쉽고 간편하게 조리할 수 있도록 다림
+                            탕육수베이스를
+                            판매중입니다</p>
+                        <div style="background: #f8f8f8; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                            <p style="margin-bottom: 10px;"><strong>용도:</strong> 갈비탕 조리시</p>
+                            <p style="margin-bottom: 10px;"><strong>조리방법:</strong> 1인분에 밥숟갈(20g) 양으로 맛을 조절하세요</p>
+                            <p style="margin-bottom: 10px;"><strong>원료:</strong> 소고기, 닭고기, 대두, 밀, 우유 함유</p>
+                            <p style="margin-bottom: 10px;"><strong>유통기한:</strong> 제조일로부터 12개월</p>
+                            <p><strong>보관방법:</strong> 차광 실온 보관</p>
+                        </div>
+                    </div>
+                    <img src="https://modo-phinf.pstatic.net/20240809_9/1723160773615xRTWn_JPEG/mosaTmxkJ3.jpeg"
+                        alt="우골농충액" onclick="showMainImage(this.src)">
+                </div>
+                <div class="product-info" style="margin-top: 30px;">
+                    <h3 style="font-size: 20px; margin-bottom: 20px; text-align: center;">우골농축액</h3>
+                    <p style="text-align: center; color: #666; margin-bottom: 15px;">설렁탕,곰탕,떡국,만두국,칼국수 등 국물요리에 적합한
+                        우골농축액입니다
+                    </p>
+                    <div style="background: #f8f8f8; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                        <p style="margin-bottom: 15px;"><strong>용도:</strong></p>
+                        <ul style="margin-left: 20px; margin-bottom: 15px;">
+                            <li>육개장, 설렁탕, 곰탕 등 각종 탕류 국물요리</li>
+                            <li>부대찌개, 김치찌개 등 국종류 요리시</li>
+                            <li>떡국, 만두국, 칼국수, 수제비 등 국물요리</li>
+                        </ul>
+                        <p style="margin-bottom: 15px;"><strong>조리방법:</strong></p>
+                        <ul style="margin-left: 20px; margin-bottom: 15px;">
+                            <li>1인분에 찻숟갈(5g)의 양으로 맛을 조절하세요</li>
+                            <li>용도에 따라 50~100배 희석, 가열 후 섭취하세요</li>
+                        </ul>
+                        <p style="margin-bottom: 10px;"><strong>원료 및 함량:</strong> 우골농축액 88%, 정제염 12%(소고기함유)</p>
+                        <p style="margin-bottom: 10px;"><strong>유통기한:</strong> 제조일로부터 12개월</p>
+                        <p><strong>보관방법:</strong> 차광 실온 보관</p>
+                    </div>
+                </div>
+
+
+
+                <div class="contact-cta"
+                    style="text-align: center; margin: 50px 0; padding: 40px; background: #f8f8f8; border-radius: 8px;">
+                    <h3 style="font-size: 24px; margin-bottom: 10px;">제품 구매 문의</h3>
+                    <p style="font-size: 18px; color: #666; margin-bottom: 20px;">담당자: 김동근 대리</p>
+                    <p style="font-size: 32px; font-weight: bold; color: #333; margin-bottom: 20px;">010-9999-3436</p>
+                    <a href="tel:010-9999-3436" class="btn">전화 문의하기</a>
+                </div>
+            </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p><strong>주식회사 삼지상사</strong></p>
+                <p>대표: 최진균 | 주소: 인천 연수구 예술로 20번길 91 (선학동)</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 주식회사 삼지상사. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 플로팅 전화 문의 버튼 -->
+    <a href="tel:010-9999-3436" class="floating-call-button">
+        📞 010-9999-3436
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
