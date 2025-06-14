@@ -1,0 +1,204 @@
+@charset "utf-8";
+/*마우스오버 아이콘*/
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,800);
+
+/*웹폰트 사용시 연결해주세요*/
+
+/********************  noto+Sans+kr  ********************/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&display=swap'); 
+/********************  noto+Sans+kr  ********************/
+
+/********************  noto+Serif+kr  ********************/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+/********************  noto+Serif+kr  ********************/
+
+
+/********************  지마켓  ********************/
+@font-face {
+  font-family: 'GmarketSansBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GmarketSansLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/********************  지마켓  ********************/
+
+/********************  나눔고딕  ********************/
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Bold.woff) format('woff')
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.woff) format('woff'),
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 800;
+  src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-ExtraBold.woff) format('woff'),
+}
+/********************  나눔고딕  노토산 세리프 ********************/
+/* font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Noto Serif KR', serif; 
+font-family: 'Noto Sans KR', serif; 
+*/
+
+/********************  나눔고딕  노토산 세리프 ********************/
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+/* {font-family: 'Permanent Marker', cursive;} */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+/* {font-family: 'Fredoka One', cursive;} */
+
+@font-face {
+  font-family: 'yg-jalnan';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+  /* font-weight: normal;
+  font-style: normal; */
+}
+/* 여기어때 잘난체 */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', serif; 
+  /* scroll-behavior: smooth; */
+}
+
+li {
+  list-style: none;
+}
+
+html,
+body {
+  height: 100%;
+  color:#333;
+  font-size:16px;
+  font-weight: 400;
+  min-width:1224px;
+  font-family: 'Noto Sans KR', serif; 
+  /* scroll-behavior: smooth; */
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+a:hover,
+a:focus,
+a:active {
+  color: #bf0b2c;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+img,
+input {
+  vertical-align: top;
+}
+
+img,
+embed,
+iframe {
+  max-width: 100%;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+section{
+  width:100%;
+  /* overflow: hidden; */
+}
+
+/*플롯되는 부모요소한테 적용시켜주세요*/
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*감춤 요소한테 적용시켜주세요.*/
+.hidden {
+  width: 0;
+  height: 0;
+  position: absolute;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1224px;
+  /* min-width: 1440px; */
+  margin: 0 auto;
+  position: relative;
+}
+
+.inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+}
+
+
+/*.container 안에 있는 클래스 col 로 시작하는 요소들은 float 정의*/
+.container>*[class*="col"] {
+  float: left;
+  margin: 0 0.98%;
+  min-height: 1px;
+}
+
+/*플롯된 부모인 container 요소 영역 인식 다음요소  clear 적용*/
+.container:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/*1224 그리드 가변폭 좌우마진은 12px 0.98% */
+.col1 {width: 6.372%;}
+.col2 {width: 14.705%;}
+.col3 {width: 23.039%;}
+.col4 {width: 31.372%;}
+.col5 {width: 40.5%;}
+.col6 {width: 48.039%;}
+.col7 {width: 56.372%;}
+.col8 {width: 64.705%;}
+.col9 {width: 73.039%;}
+.col10 {width: 81.372%;}
+.col11 {width: 89.705%;}
+.col12 {width: 98.039%;}
