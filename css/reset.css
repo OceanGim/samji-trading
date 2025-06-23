@@ -95,7 +95,6 @@ body {
   color:#333;
   font-size:16px;
   font-weight: 400;
-  min-width:1224px;
   font-family: 'Noto Sans KR', serif; 
   /* scroll-behavior: smooth; */
 }
@@ -161,7 +160,6 @@ section{
 .wrap {
   width: 100%;
   max-width: 1224px;
-  /* min-width: 1440px; */
   margin: 0 auto;
   position: relative;
 }

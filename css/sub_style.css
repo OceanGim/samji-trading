@@ -1,10 +1,9 @@
 /* visual sub 공통 start */
 .sub_visual{
     width:100%;
-    min-width:1400px;
     position: relative;
     overflow: hidden;
-    padding-top:80px;
+    padding-top:50px;
 }
 .sub_visual::before{
     position: absolute;
@@ -29,7 +28,10 @@
     transform: translate(-50%, -50%);
     text-align: center;
     width:100%;
+    max-width: 1200px;
     z-index: 99;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 .sub_visual .sub_typo > span.up{opacity:1; transform:translate(0,0);}
 .sub_visual .sub_typo span{
@@ -55,8 +57,8 @@
 /* .contents{padding:30px 0;} */
 .sub_tabmenu{
     position: sticky;
-    z-index: 99;
-    top:100px;
+    z-index: 90;
+    top:50px;
     background: rgba(0,0,0,0.6);
     height:60px;
     line-height: 60px;
@@ -66,6 +68,10 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 .sub_tabmenu ul li{width:9.09%;}
 .sub_tabmenu li a{
@@ -95,10 +101,15 @@
 /* sub 타이틀 공통 */
 .contents_title{
     padding-top:150px;
+    margin-top:60px; /* Added to account for sticky menu height */
     position: relative;
     width:100%;
-    min-width:1200px;
     overflow: hidden;
+}
+
+/* 헤더와 충돌 방지 */
+.contents {
+    margin-top: 20px;
 }
 .contents_title h2{
     padding:15px 0;
@@ -316,7 +327,10 @@
 .sub02_01 .chart{
     margin:60px auto 0 auto;
     position: relative;
-    width:1120px;
+    width:100%;
+    max-width:1120px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 .sub02_01 .chart span{
     display: block;
@@ -357,7 +371,10 @@
 .sub02_02 .chart{
     margin:60px auto 0 auto;
     position: relative;
-    width:1120px;
+    width:100%;
+    max-width:1120px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 .sub02_02 .chart span{
     display: block;
@@ -398,7 +415,10 @@
 .sub02_03 .chart{
     margin:60px auto 0 auto;
     position: relative;
-    width:1120px;
+    width:100%;
+    max-width:1120px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 .sub02_03 .chart span{
     display: block;
@@ -437,7 +457,10 @@
 .sub02_03 .chart{
     margin:60px auto 0 auto;
     position: relative;
-    width:1120px;
+    width:100%;
+    max-width:1120px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 .sub02_03 .chart span{
     display: block;
@@ -500,7 +523,10 @@
 .sub02_04 .chart{
     margin:60px auto 0 auto;
     position: relative;
-    width:1120px;
+    width:100%;
+    max-width:1120px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 .sub02_04 .chart > span{
     display: block;
@@ -560,7 +586,10 @@
 .sub02_05 .chart{
     margin:60px auto 0 auto;
     position: relative;
-    width:1120px;
+    width:100%;
+    max-width:1120px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 .sub02_05 .chart span{
     display: block;
@@ -632,7 +661,10 @@
 .sub02_06 .chart{
     margin:60px auto 0 auto;
     position: relative;
-    width:1120px;
+    width:100%;
+    max-width:1120px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 .sub02_06 .chart span{
     display: block;
@@ -673,7 +705,10 @@
 .sub02_07 .chart{
     margin:60px auto 0 auto;
     position: relative;
-    width:1120px;
+    width:100%;
+    max-width:1120px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 .sub02_07 .chart span{
     display: block;
@@ -714,7 +749,10 @@
 .sub02_08 .chart{
     margin:60px auto 0 auto;
     position: relative;
-    width:1120px;
+    width:100%;
+    max-width:1120px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 .sub02_08 .chart span{
     display: block;
@@ -755,7 +793,10 @@
 .sub02_09 .chart{
     margin:60px auto 0 auto;
     position: relative;
-    width:1120px;
+    width:100%;
+    max-width:1120px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 .sub02_09 .chart span{
     display: block;
@@ -797,8 +838,8 @@
 .sub02_10 .list h3{
     font-size:32px;
     color:#000;
-    text-align: left;
-    margin-bottom:10px;
+    text-align: center;
+    margin-bottom:30px;
     padding-bottom:10px;
     border-bottom:1px solid #ccc;
 }
@@ -811,40 +852,63 @@
 .sub02_10 .list ul{
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: center;
     gap:40px;
-    padding:15px 0;
+    padding:30px 0;
+    margin-bottom: 40px;
 }
-.sub02_10 .list ul li{width:50%;}
-.sub02_10 .list ul li img{width:100%;}
+.sub02_10 .list ul li{
+    width:45%;
+    max-width: 400px;
+    text-align: center;
+}
+.sub02_10 .list ul li .clip-animation{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.sub02_10 .list ul li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .sub02_10 .list ul li h4{
-    font-size:20px;
-    color:#000;
-    text-align: left;
-    padding:10px 0;
+    font-size:24px;
+    color:#002768;
+    text-align: center;
+    padding:15px 0;
+    font-weight: bold;
 }
 .sub02_10 .list ul li p{
-    font-size:18px;
-    color:#333;
-    text-align: left;
+    font-size:16px;
+    color:#555;
+    text-align: center;
+    line-height: 1.6;
 }
 .sub02_10 .list h4{
     font-size:24px;
-    color:#000;
-    text-align: left;
-    margin-bottom:10px;
+    color:#002768;
+    text-align: center;
+    margin-bottom:20px;
+    margin-top: 40px;
+    font-weight: bold;
 }
 .sub02_10 .list > p{
     font-size:18px;
     color:#333;
-    text-align: left;
+    text-align: center;
     line-height:32px;
+    margin-bottom: 10px;
 }
 .sub02_10 .list > span{
     display: block;
-    font-size:16px;
-    text-align: left;
-    line-height:30px
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    line-height: 28px;
+    margin-bottom: 8px;
 }
 .sub02_10 .list > span:nth-of-type(3),
 .sub02_10 .list > span:nth-of-type(5){margin-bottom:20px;}
@@ -852,7 +916,10 @@
 .sub02_10 .chart{
     margin:60px auto 0 auto;
     position: relative;
-    width:1120px;
+    width:100%;
+    max-width:1120px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 .sub02_10 .chart span{
     display: block;
@@ -893,7 +960,10 @@
 .sub02_11 .chart{
     margin:60px auto 0 auto;
     position: relative;
-    width:1120px;
+    width:100%;
+    max-width:1120px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 .sub02_11 .chart span{
     display: block;
@@ -952,4 +1022,683 @@
 }
 .sub04_01 .map .chart tr th{background-color: #f7f7f7;}
 /* .sub04_01 */
+
+/* Product Pages (sub02_01 ~ sub02_10) */
+.product_main {
+    display: block;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.product_image {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.product_image img {
+    max-width: 600px;
+    max-height: 500px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: block;
+    margin: 0 auto;
+}
+
+.product_info {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.product_info h3 {
+    font-size: 36px;
+    color: #002768;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.product_info .desc {
+    font-size: 20px;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+
+.product_info .features {
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.product_info .features h4 {
+    font-size: 24px;
+    color: #002768;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.product_info .features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.product_info .features ul li {
+    font-size: 18px;
+    color: #555;
+    padding: 10px 0;
+    position: relative;
+    padding-left: 25px;
+}
+
+.product_info .features ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #008eda;
+    font-weight: bold;
+}
+
+.product_info .origin {
+    background-color: #002768;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.product_info .origin h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product_info .origin p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.product_detail {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.product_detail h3 {
+    font-size: 28px;
+    color: #002768;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.product_table {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product_table th,
+.product_table td {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.product_table th {
+    background-color: #002768;
+    color: white;
+    font-weight: bold;
+    width: 30%;
+}
+
+.product_table td {
+    background-color: #fff;
+    color: #333;
+}
+
+.cooking_info {
+    background-color: #f8f9fa;
+    padding: 60px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.cooking_info h3 {
+    font-size: 28px;
+    color: #002768;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.cooking_info ol {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.cooking_info ol li {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN - 반응형 디자인
+   ======================================== */
+
+/* Desktop First Approach */
+
+/* Tablet - 태블릿 (1024px 이하) */
+@media (max-width: 1024px) {
+    /* 기본 레이아웃 */
+    .inner {
+        width: 95%;
+        padding: 0 20px;
+    }
+    
+    /* 비주얼 섹션 */
+    .sub_visual {
+        min-width: 100%;
+    }
+    .sub_visual > img {
+        height: 350px;
+    }
+    .sub_visual .sub_typo span:first-child {
+        font-size: 36px;
+    }
+    
+    /* 컨텐츠 타이틀 */
+    .contents_title {
+        min-width: 100%;
+        padding-top: 100px;
+    }
+    .contents_title h2 {
+        font-size: 28px;
+    }
+    
+    /* 탭 메뉴 */
+    .sub_tabmenu {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .sub_tabmenu ul {
+        min-width: 800px;
+    }
+    .sub_tabmenu li a {
+        font-size: 13px;
+        padding: 0 5px;
+    }
+    
+    /* 제품 페이지 */
+    .product_image img {
+        max-width: 500px;
+    }
+    .product_info h3 {
+        font-size: 32px;
+    }
+    .product_info .desc {
+        font-size: 18px;
+    }
+    .product_info .features {
+        padding: 30px;
+    }
+    .product_table {
+        width: 90%;
+    }
+    
+    /* sub02_10 소스 페이지 */
+    .sub02_10 .list ul {
+        gap: 20px;
+    }
+    .sub02_10 .list ul li .clip-animation {
+        height: 250px;
+    }
+}
+
+/* Mobile - 모바일 (768px 이하) */
+@media (max-width: 768px) {
+    /* 기본 레이아웃 */
+    .inner {
+        width: 100%;
+        padding: 0 15px;
+    }
+    
+    /* 헤더 반응형 */
+    header {
+        height: 50px !important; /* Reduced from 100px to 50px */
+        min-width: 100% !important;
+    }
+    header nav {
+        height: 50px;
+    }
+    header nav .inner {
+        flex-wrap: wrap;
+        height: 50px;
+    }
+    header .logo h1 {
+        width: 150px; /* Reduced logo size */
+        height: 30px;
+        top: 10px; /* Adjusted position */
+        background-size: 150px !important;
+    }
+    header .logo h1 a {
+        width: 150px;
+        height: 30px;
+    }
+    header .gnb {
+        display: none; /* Hide menu on mobile for now */
+    }
+    header .consulting {
+        display: none;
+    }
+    
+    /* 푸터 반응형 */
+    footer {
+        padding: 30px 15px;
+    }
+    footer p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    footer p span {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    /* 비주얼 섹션 */
+    .sub_visual {
+        padding-top: 50px; /* Adjusted for new header height */
+    }
+    .sub_visual > img {
+        height: 250px;
+    }
+    .sub_visual .sub_typo span:first-child {
+        font-size: 28px;
+    }
+    .sub_visual .sub_typo span:nth-child(2) {
+        font-size: 16px;
+    }
+    
+    /* 컨텐츠 타이틀 */
+    .contents_title {
+        padding-top: 30px; /* Normal padding since sticky is removed */
+        margin-top: 0; /* No need for extra margin */
+    }
+    .contents_title h2 {
+        font-size: 24px;
+    }
+    
+    /* 탭 메뉴 */
+    .sub_tabmenu {
+        position: relative; /* Changed from sticky to relative on mobile */
+        height: 50px;
+        line-height: 50px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin-bottom: 30px; /* Add spacing after menu */
+    }
+    .sub_tabmenu li a {
+        font-size: 12px;
+    }
+    
+    /* 제품 페이지 */
+    .product_main {
+        margin-top: 40px; /* Increased top margin to prevent overlap */
+        margin-bottom: 50px;
+    }
+    .product_image {
+        margin-bottom: 40px;
+    }
+    .product_image img {
+        max-width: 100%;
+        max-height: 400px;
+        width: auto;
+        margin: 0 auto;
+        display: block;
+    }
+    .product_info h3 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .product_info .desc {
+        font-size: 16px;
+        padding: 0 10px;
+        margin-bottom: 30px;
+    }
+    .product_info .features {
+        padding: 25px 20px;
+        margin-bottom: 20px;
+    }
+    .product_info .features h4 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .product_info .features ul li {
+        font-size: 16px;
+        padding: 8px 0;
+    }
+    .product_info .origin {
+        padding: 20px;
+    }
+    .product_info .origin h4 {
+        font-size: 18px;
+    }
+    .product_info .origin p {
+        font-size: 16px;
+    }
+    
+    /* 제품 상세 테이블 */
+    .product_detail {
+        margin-bottom: 40px;
+    }
+    .product_detail h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .product_table {
+        width: 100%;
+    }
+    .product_table th,
+    .product_table td {
+        padding: 15px 10px;
+        font-size: 14px;
+    }
+    
+    /* 조리방법 */
+    .cooking_info {
+        padding: 40px 20px;
+    }
+    .cooking_info h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .cooking_info ol li {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    
+    /* sub01 페이지들 */
+    .sub01_01 .introduction ul {
+        flex-direction: column;
+    }
+    .sub01_01 .introduction ul li {
+        width: 100%;
+    }
+    .sub01_01 .introduction ul li .tit h2 {
+        font-size: 32px;
+    }
+    .sub01_01 .introduction ul li .tit h4 {
+        font-size: 20px;
+    }
+    .sub01_01 .history ul {
+        flex-direction: column;
+    }
+    .sub01_01 .history ul li {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    /* sub02_10 소스 페이지 */
+    .sub02_10 .list ul {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .sub02_10 .list ul li {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    .sub02_10 .list ul li .clip-animation {
+        height: 250px;
+    }
+    .sub02_10 .list h3 {
+        font-size: 28px;
+    }
+    .sub02_10 .list h4 {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    .sub02_10 .list > p {
+        font-size: 16px;
+        padding: 0 15px;
+        line-height: 28px;
+    }
+    .sub02_10 .list > span {
+        font-size: 14px;
+        padding: 0 15px;
+        text-align: left;
+        line-height: 24px;
+    }
+    .sub02_10 .chart table {
+        font-size: 14px;
+    }
+    .sub02_10 .chart table th,
+    .sub02_10 .chart table td {
+        padding: 10px 5px;
+        font-size: 14px;
+    }
+}
+
+/* Small Mobile - 작은 모바일 (480px 이하) */
+@media (max-width: 480px) {
+    /* 비주얼 섹션 */
+    .sub_visual > img {
+        height: 200px;
+    }
+    .sub_visual .sub_typo span:first-child {
+        font-size: 24px;
+    }
+    .sub_visual .sub_typo span:nth-child(2) {
+        font-size: 14px;
+    }
+    
+    /* 컨텐츠 타이틀 */
+    .contents_title {
+        padding-top: 60px;
+    }
+    .contents_title h2 {
+        font-size: 20px;
+    }
+    
+    /* 제품 페이지 */
+    .product_image img {
+        max-height: 300px;
+    }
+    .product_info h3 {
+        font-size: 24px;
+    }
+    .product_info .desc {
+        font-size: 14px;
+    }
+    .product_info .features ul li {
+        font-size: 14px;
+    }
+    .product_detail h3 {
+        font-size: 20px;
+    }
+    .cooking_info h3 {
+        font-size: 20px;
+    }
+    .cooking_info ol li {
+        font-size: 14px;
+    }
+    
+    /* 테이블 반응형 처리 */
+    .product_table,
+    .sub02_10 .chart table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .product_table th,
+    .product_table td {
+        white-space: nowrap;
+    }
+    
+    /* 탭 메뉴 */
+    .sub_tabmenu li a {
+        font-size: 11px;
+        letter-spacing: -0.5px;
+    }
+    
+    /* 빠른 연락 메뉴 */
+    .q_menu {
+        bottom: 20px;
+        right: 10px;
+    }
+    .q_menu .icon {
+        width: 50px;
+        height: 50px;
+    }
+    .q_menu .icon h4 {
+        display: none;
+    }
+    .q_menu .icon p {
+        display: none;
+    }
+}
+
+/* Large Desktop - 큰 데스크톱 (1400px 이상) */
+@media (min-width: 1400px) {
+    .inner {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .product_image img {
+        max-width: 700px;
+    }
+    
+    .product_info {
+        max-width: 900px;
+    }
+}
+
+/* Print Styles - 인쇄용 스타일 */
+@media print {
+    .sub_tabmenu,
+    .q_menu,
+    .topbtn,
+    header,
+    footer {
+        display: none !important;
+    }
+    
+    .contents_detail {
+        padding: 0;
+    }
+    
+    .product_table {
+        width: 100%;
+    }
+}
+
+/* .sub04_01 */
 /* ------------------------------------------- sub -------------------------------------------------------- */
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    /* Update .inner class for mobile */
+    .inner { 
+        width: 100% !important; 
+        max-width: 100% !important;
+        padding: 0 15px !important;
+    }
+    
+    /* Sub visual adjustments */
+    .sub_visual {
+        padding-top: 50px;
+    }
+    
+    .sub_visual > img {
+        height: 250px;
+    }
+    
+    .sub_visual .sub_typo span:first-child {
+        font-size: 28px;
+    }
+    
+    .sub_visual .sub_typo span:nth-child(2) {
+        font-size: 14px;
+    }
+    
+    /* Tab menu mobile */
+    .sub_tabmenu {
+        top: 50px;
+        height: auto;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin-top: -50px;
+    }
+    
+    .sub_tabmenu ul {
+        min-width: 100%;
+        width: max-content;
+    }
+    
+    .sub_tabmenu ul li {
+        width: auto;
+        min-width: 100px;
+    }
+    
+    .sub_tabmenu li a {
+        padding: 10px 15px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+    
+    /* Contents title mobile */
+    .contents_title {
+        padding-top: 80px;
+        margin-top: 40px;
+    }
+    
+    .contents_title h2 {
+        font-size: 24px;
+    }
+    
+    /* Product list mobile */
+    .product_wrap {
+        padding: 20px 0;
+    }
+    
+    .products_box li {
+        width: calc(50% - 10px);
+        margin: 0 5px 20px;
+    }
+    
+    /* Tables mobile */
+    .table_box {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .info_table {
+        min-width: 500px;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .products_box li {
+        width: 100%;
+        margin: 0 0 20px;
+    }
+    
+    .sub_visual .sub_typo span:first-child {
+        font-size: 24px;
+    }
+    
+    .contents_title h2 {
+        font-size: 20px;
+    }
+}
